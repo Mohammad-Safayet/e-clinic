@@ -1,0 +1,45 @@
+package self.safayet.e_medical_chamber.data
+
+import self.safayet.e_medical_chamber.domain.model.Alarm
+
+object DummyData {
+    val alarms = listOf<Alarm>(
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+        Alarm(0, "name", "12.00 AM", 15, true),
+    )
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="doctor_titles">
+        <item>Dr.</item>
+        <item>Assoc. Prof. Dr.</item>
+        <item>Asst. Prof. Dr.</item>
+        <item>Prof. Dr.</item>
+    </string-array>
+</resources>

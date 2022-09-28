@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_med_name_layout"
+        style="@style/DefaultInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/str_hint_medicine_name"
+        android:textColorHint="?attr/colorOnPrimary"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_med_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_med_notes_layout"
+        style="@style/DefaultInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Medicine Notes"
+        android:textColorHint="?attr/colorOnPrimary"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_med_name_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_med_notes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cb_morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Morning"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/cb_noon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_med_notes_layout" />
+
+    <CheckBox
+        android:id="@+id/cb_noon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noon"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_morning"
+        app:layout_constraintEnd_toStartOf="@+id/cb_night"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_morning"
+        app:layout_constraintTop_toTopOf="@+id/cb_morning" />
+
+    <CheckBox
+        android:id="@+id/cb_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_noon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_noon"
+        app:layout_constraintTop_toTopOf="@+id/cb_noon" />
+
+    <Button
+        android:id="@+id/btn_add_medicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_morning" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

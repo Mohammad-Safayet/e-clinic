@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patient_home_navigation"
+    android:label="Profile Page"
+    app:startDestination="@id/patientHomePage">
+
+    <fragment
+        android:id="@+id/patientHomePage"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.PatientHomePage"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_patient_home_page" >
+        <action
+            android:id="@+id/nav_to_appointment_details_page"
+            app:destination="@id/patientAppointmentPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientProfilePage"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.PatientProfilePage"
+        android:label="fragment_patient_profile_page"
+        tools:layout="@layout/fragment_patient_profile_page" >
+        <action
+            android:id="@+id/navigate_to_profile_view_page"
+            app:destination="@id/patientProfileViewPage" />
+        <argument
+            android:name="password"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientAlarmPage"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.PatientAlarmPage"
+        android:label="Alarm Page"
+        tools:layout="@layout/fragment_patient_alarm_page" />
+    <fragment
+        android:id="@+id/patientSearchPage"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.PatientSearchPage"
+        android:label="Search Page"
+        tools:layout="@layout/fragment_patient_search_page" />
+    <fragment
+        android:id="@+id/doctorCategoryPageFragment"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.DoctorCategoryPageFragment"
+        android:label="fragment_doctor_category_page"
+        tools:layout="@layout/fragment_doctor_category_page" >
+        <action
+            android:id="@+id/navigate_to_filter_page"
+            app:destination="@id/categoryPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientAppointmentPageFragment"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.PatientAppointmentPageFragment"
+        android:label="fragment_patient_appointment_page"
+        tools:layout="@layout/fragment_patient_appointment_page" >
+        <action
+            android:id="@+id/nav_to_patient_home_page"
+            app:destination="@id/patientHomePage" />
+        <argument android:name="patientId"
+            app:argType="string" />
+        <argument
+            android:name="doctorId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryPageFragment"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.CategoryPageFragment"
+        android:label="fragment_category_page"
+        tools:layout="@layout/fragment_category_page" >
+        <action
+            android:id="@+id/navigate_back_to_home_page"
+            app:destination="@id/doctorCategoryPageFragment" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientProfileViewPage"
+        android:name="self.safayet.e_medical_chamber.ui.fragment.patient.PatientProfileViewPage"
+        android:label="fragment_patient_profile_view_page"
+        tools:layout="@layout/fragment_patient_profile_view_page" >
+        <action
+            android:id="@+id/navigate_to_profile_edit_page"
+            app:destination="@id/patientProfilePage" />
+    </fragment>
+</navigation>
