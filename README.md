@@ -6,7 +6,7 @@ This is an android application that allows both patient and doctor to communicat
 
 
 
-## Features
+### Features
 
 ---
 
@@ -28,7 +28,7 @@ This is an android application that allows both patient and doctor to communicat
 
 
 
-## Instalation guide
+### Instalation guide
 
 ---
 
@@ -67,7 +67,7 @@ Before you begin building the application, you must have the following prerequis
 
 
 
-## Credits
+### Credits
 
 ---
 
